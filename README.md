@@ -60,19 +60,16 @@ Your site will be at:
 
 `https://<username>.github.io/<repo>/`
 
-## Analytics (later)
-
 ## Add GA4
 
-1. Create a GA4 property and get your Measurement ID (looks like `G-XXXXXXXXXX`).
-2. Set your Measurement ID in:
+1. In GA4, copy your Google tag snippet (gtag.js).
+2. Paste it into:
    - `index.html`
    - `category/index.html`
 3. Category events are sent automatically from `js/site.js` as `category_view` with:
    - `category_slug`
    - `category_name`
 
-Implementation files:
+Implementation file:
 
-- `js/analytics.js`
 - `js/site.js`

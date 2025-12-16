@@ -99,8 +99,11 @@
       }
     }
 
-    if (typeof window.trackCategoryView === "function") {
-      window.trackCategoryView(cat);
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "category_view", {
+        category_slug: cat.slug,
+        category_name: cat.name || cat.slug,
+      });
     }
   }
 
