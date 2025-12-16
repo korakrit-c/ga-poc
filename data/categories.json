@@ -1,0 +1,23 @@
+{
+  "siteTitle": "Game Categories",
+  "categories": [
+    {
+      "slug": "action",
+      "name": "Action",
+      "description": "Fast-paced games focused on reflexes, timing, and momentum.",
+      "examples": ["Platformer", "Hack and slash", "Beat ’em up", "Action-adventure"]
+    },
+    {
+      "slug": "rpg",
+      "name": "RPG",
+      "description": "Character progression, choices, quests, and immersive worlds.",
+      "examples": ["Action RPG", "Turn-based RPG", "Tactical RPG", "Open-world RPG"]
+    },
+    {
+      "slug": "strategy",
+      "name": "Strategy",
+      "description": "Planning and decision-making, from tactics to grand strategy.",
+      "examples": ["Real-time strategy (RTS)", "Turn-based strategy", "4X", "City builder"]
+    }
+  ]
+}

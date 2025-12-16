@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Category</title>
+    <meta name="description" content="Browse a game category." />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      window.SITE_BASE = "../";
+    </script>
+    <script defer src="../js/include.js"></script>
+    <script defer src="../js/site.js"></script>
+  </head>
+  <body>
+    <div data-include="partials/header.html"></div>
+
+    <main class="container">
+      <section class="hero">
+        <h1 id="category-title">Category</h1>
+        <p class="muted" id="category-description"></p>
+      </section>
+
+      <section class="card">
+        <h2>Examples</h2>
+        <ul class="list" id="category-examples"></ul>
+      </section>
+
+      <p class="back-link"><a href="../">← Back to Home</a></p>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </body>
+</html>
