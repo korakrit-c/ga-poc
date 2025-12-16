@@ -98,6 +98,10 @@
         list.appendChild(li);
       }
     }
+
+    if (typeof window.trackCategoryView === "function") {
+      window.trackCategoryView(cat);
+    }
   }
 
   async function init() {

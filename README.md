@@ -62,5 +62,17 @@ Your site will be at:
 
 ## Analytics (later)
 
-GA4 can be added once in a shared script and triggered per category using the category slug (`c` query param).
+## Add GA4
 
+1. Create a GA4 property and get your Measurement ID (looks like `G-XXXXXXXXXX`).
+2. Set your Measurement ID in:
+   - `index.html`
+   - `category/index.html`
+3. Category events are sent automatically from `js/site.js` as `category_view` with:
+   - `category_slug`
+   - `category_name`
+
+Implementation files:
+
+- `js/analytics.js`
+- `js/site.js`
