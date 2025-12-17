@@ -63,10 +63,8 @@ Your site will be at:
 
 ## Add GA4
 
-1. In GA4, copy your Google tag snippet (gtag.js).
-2. Paste it into:
-   - `index.html`
-   - `category/index.html`
+1. Set your Measurement ID in `js/ga.js`.
+2. Ensure pages include `js/ga.js` (already wired in `index.html` and `category/index.html`).
 3. Events sent automatically (when GA is installed):
    - `category_view` on category pages
    - `category_click` when users click a category link
