@@ -18,6 +18,66 @@
       "name": "Strategy",
       "description": "Planning and decision-making, from tactics to grand strategy.",
       "examples": ["Real-time strategy (RTS)", "Turn-based strategy", "4X", "City builder"]
+    },
+    {
+      "slug": "shooter",
+      "name": "Shooter",
+      "description": "Combat-driven games emphasizing aiming, positioning, and weapons.",
+      "examples": ["First-person shooter (FPS)", "Third-person shooter", "Hero shooter", "Arena shooter"]
+    },
+    {
+      "slug": "adventure",
+      "name": "Adventure",
+      "description": "Story-focused experiences centered on exploration and puzzle-solving.",
+      "examples": ["Point-and-click", "Narrative adventure", "Visual novel", "Interactive fiction"]
+    },
+    {
+      "slug": "simulation",
+      "name": "Simulation",
+      "description": "Games that model real-world or fictional systems with high fidelity.",
+      "examples": ["Life simulation", "Flight simulation", "Farming simulation", "Vehicle simulation"]
+    },
+    {
+      "slug": "sports",
+      "name": "Sports",
+      "description": "Competitive games based on real or fictional sports.",
+      "examples": ["Football", "Basketball", "Racing", "Extreme sports"]
+    },
+    {
+      "slug": "racing",
+      "name": "Racing",
+      "description": "Speed-focused games centered on vehicles and track mastery.",
+      "examples": ["Arcade racing", "Simulation racing", "Kart racing", "Open-world racing"]
+    },
+    {
+      "slug": "puzzle",
+      "name": "Puzzle",
+      "description": "Games that challenge logic, pattern recognition, and problem-solving.",
+      "examples": ["Logic puzzles", "Physics puzzles", "Word puzzles", "Tile-matching"]
+    },
+    {
+      "slug": "horror",
+      "name": "Horror",
+      "description": "Atmospheric games designed to evoke fear, tension, and suspense.",
+      "examples": ["Survival horror", "Psychological horror", "Action horror", "Stealth horror"]
+    },
+    {
+      "slug": "multiplayer",
+      "name": "Multiplayer",
+      "description": "Games designed around cooperative or competitive player interaction.",
+      "examples": ["Co-op", "PvP", "MMO", "Party games"]
+    },
+    {
+      "slug": "casual",
+      "name": "Casual",
+      "description": "Accessible games designed for short sessions and broad audiences.",
+      "examples": ["Idle games", "Match-3", "Endless runners", "Social games"]
+    },
+    {
+      "slug": "sandbox",
+      "name": "Sandbox",
+      "description": "Open-ended games that encourage creativity and player-driven goals.",
+      "examples": ["Building games", "Physics sandboxes", "Creative simulators", "Open sandbox worlds"]
     }
   ]
 }
