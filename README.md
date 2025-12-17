@@ -51,10 +51,11 @@ Then open `http://localhost:8000/`.
 
 ## Deploy (GitHub Pages)
 
+This repo is set up to deploy via **GitHub Actions** and shows a build/version string in the footer.
+
 1. Push to GitHub (`main` branch).
 2. GitHub repo → **Settings → Pages**
-3. Source: **Deploy from a branch**
-4. Branch: `main` / Folder: `/ (root)`
+3. Source: **GitHub Actions**
 
 Your site will be at:
 
