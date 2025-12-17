@@ -36,11 +36,13 @@ jobs:
             ./ dist/
           python3 - <<'PY'
           import json, os, datetime
+          from datetime import timezone, timedelta
           sha = os.environ.get("GITHUB_SHA","")
+          bangkok = timezone(timedelta(hours=7))
           out = {
             "sha": sha,
             "shortSha": sha[:7] if sha else "",
-            "builtAt": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+            "builtAt": datetime.datetime.now(tz=bangkok).replace(microsecond=0).isoformat(),
           }
           os.makedirs("dist/meta", exist_ok=True)
           with open("dist/meta/version.json", "w", encoding="utf-8") as f:
