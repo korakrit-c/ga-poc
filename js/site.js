@@ -6,6 +6,11 @@
     return base + path;
   }
 
+  function trackEvent(name, params) {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", name, params || {});
+  }
+
   function categoryParamSlug() {
     try {
       var params = new URLSearchParams(window.location.search || "");
@@ -43,6 +48,15 @@
       a.textContent = cat.name;
       a.href = joinUrl(window.SITE_BASE || "./", "category/?c=" + encodeURIComponent(cat.slug));
       if (slug === cat.slug) a.setAttribute("aria-current", "page");
+      (function (category) {
+        a.addEventListener("click", function () {
+          trackEvent("category_click", {
+            category_slug: category.slug,
+            category_name: category.name || category.slug,
+            source: "nav",
+          });
+        });
+      })(cat);
       nav.appendChild(a);
     }
   }
@@ -68,6 +82,15 @@
       link.className = "button";
       link.href = joinUrl(window.SITE_BASE || "./", "category/?c=" + encodeURIComponent(cat.slug));
       link.textContent = "Explore " + cat.name;
+      (function (category) {
+        link.addEventListener("click", function () {
+          trackEvent("category_click", {
+            category_slug: category.slug,
+            category_name: category.name || category.slug,
+            source: "home_card",
+          });
+        });
+      })(cat);
       card.appendChild(link);
 
       grid.appendChild(card);
@@ -99,12 +122,10 @@
       }
     }
 
-    if (typeof window.gtag === "function") {
-      window.gtag("event", "category_view", {
-        category_slug: cat.slug,
-        category_name: cat.name || cat.slug,
-      });
-    }
+    trackEvent("category_view", {
+      category_slug: cat.slug,
+      category_name: cat.name || cat.slug,
+    });
   }
 
   async function init() {

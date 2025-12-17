@@ -66,7 +66,18 @@ Your site will be at:
 2. Paste it into:
    - `index.html`
    - `category/index.html`
-3. Category events are sent automatically from `js/site.js` as `category_view` with:
+3. Events sent automatically (when GA is installed):
+   - `category_view` on category pages
+   - `category_click` when users click a category link
+4. Recommended custom dimensions (Event scope):
+   - `category_slug`
+   - `category_name`
+   - `source`
+
+Event parameters:
+
+- `category_view`: `category_slug`, `category_name`
+- `category_click`: `category_slug`, `category_name`, `source` (`nav` or `home_card`)
    - `category_slug`
    - `category_name`
 
